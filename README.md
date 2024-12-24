@@ -201,7 +201,7 @@ main.html:
 ```
 
 ## OUTPUT:
-![Uploading Screenshot 2024-12-24 094548.png…]()
+![image](https://github.com/user-attachments/assets/32b96879-d1d8-4417-8262-cca87a0ce1bc)
 
 
 ## RESULT:

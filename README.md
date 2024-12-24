@@ -203,6 +203,7 @@ main.html:
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/32b96879-d1d8-4417-8262-cca87a0ce1bc)
 
+![image](https://github.com/user-attachments/assets/eafc99ee-a32b-4642-881f-e0d1c196cea2)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.

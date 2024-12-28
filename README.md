@@ -30,180 +30,128 @@ Publish the website in the LocalHost.
 main.html:
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dribbble Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #2c3e50, #34495e, #5d6d7e);
-            color: white;
-        }
-        .navbar {
-            background-color: #2c3e50;
-        }
-        .navbar-brand {
-            color: #e74c3c;
-        }
-        .navbar-brand:hover {
-            color: #f39c12;
-        }
-        .btn-custom {
-            background-color: #e74c3c;
-            border: none;
-            color: white;
-        }
-        .btn-custom:hover {
-            background-color: #f39c12;
-        }
-        .portfolio-item img {
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .portfolio-item img:hover {
-            transform: scale(1.05);
-        }
-        .portfolio-stats {
-            font-size: 0.9rem;
-            color: #bdc3c7;
-        }
-        .card-title {
-            color: #34495e;
-        }
-        .card-title:hover {
-            color: #2c3e50;
-        }
-        .custom-footer {
-            background: #2c3e50;
-            color: #bdc3c7;
-        }
-        .main-heading {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #fff;
-            background-color: #34495e;
-            padding: 20px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-        .sub-heading {
-            text-align: center;
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: #bdc3c7;
-            margin-top: -8px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Dribbble Clone</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <form class="d-flex ms-auto me-3">
-                    <input class="form-control me-2" type="search" placeholder="Search creative works" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-custom" href="#">Join now</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dribbble</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                <li class="nav-item"><a class="btn btn-primary" href="#">Sign Up</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="main-heading">
-        Showcase your creativity. Connect with like-minded designers.
-        <p class="sub-heading">Explore creative works and discover new trends</p>
-    </header>
+    <div class="container mt-4">
+        <div class="text-center mb-4 header-section">
+            <h3>What are you working on?</h3>
+            <p class="lead">Dribbble is show and tell for designers.</p>
+        </div>
 
-    <div id="portfolio" class="container py-5">
-        <h2 class="text-center mb-4">Trending Designs</h2>
-        <div class="row g-4">
-            <div class="col-md-4 portfolio-item">
-                <div class="card">
-                    <img src="ai.jpg" class="card-img-top" alt="Portfolio Item">
-                    <div class="card-body">
-                        <h5 class="card-title">AI Innovation</h5>
-                        <p class="portfolio-stats">5,012 views | 350 likes</p>
+        <div class="row gallery-section">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="ai.jpg" class="card-img-top gallery-img" alt="Design Thumbnail" width="250" height="250">
+                    <div class="card-body text-center">
+                        <p class="card-title">AetherIntellect</p>
+                        <small class="text-muted">AIKish</small>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 portfolio-item">
-                <div class="card">
-                    <img src="art.jpg" class="card-img-top" alt="Portfolio Item">
-                    <div class="card-body">
-                        <h5 class="card-title">Colorful Abstracts</h5>
-                        <p class="portfolio-stats">4,500 views | 290 likes</p>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="art.jpg" class="card-img-top gallery-img" alt="Design Thumbnail" width="250" height="250">
+                    <div class="card-body text-center">
+                        <p class="card-title">Visionary
+                        </p>
+                        <small class="text-muted">Creations
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 portfolio-item">
-                <div class="card">
-                    <img src="civ.jpg" class="card-img-top" alt="Portfolio Item">
-                    <div class="card-body">
-                        <h5 class="card-title">Architectural Wonders</h5>
-                        <p class="portfolio-stats">3,200 views | 250 likes</p>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="civ.jpg" class="card-img-top gallery-img" alt="Design Thumbnail" width="250" height="250">
+                    <div class="card-body text-center">
+                        <p class="card-title">Civil</p>
+                        <small class="text-muted">CivTech</small>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 portfolio-item">
-                <div class="card">
-                    <img src="ece.jpg" class="card-img-top" alt="Portfolio Item">
-                    <div class="card-body">
-                        <h5 class="card-title">Tech Innovations</h5>
-                        <p class="portfolio-stats">2,500 views | 200 likes</p>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="ece.jpg" class="card-img-top gallery-img" alt="Design Thumbnail" width="250" height="250">
+                    <div class="card-body text-center">
+                        <p class="card-title">ElectroLab</p>
+                        <small class="text-muted">ECE Vision</small>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 portfolio-item">
-                <div class="card">
-                    <img src="mec.jpg" class="card-img-top" alt="Portfolio Item">
-                    <div class="card-body">
-                        <h5 class="card-title">Mechanical Design Mastery</h5>
-                        <p class="portfolio-stats">3,000 views | 220 likes</p>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="mec.jpg" class="card-img-top gallery-img" alt="Design Thumbnail" width="250" height="250">
+                    <div class="card-body text-center">
+                        <p class="card-title">MechWorks</p>
+                        <small class="text-muted">PrecisionMech
+                        </small>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 portfolio-item">
-                <div class="card">
-                    <img src="OIP.jpg" class="card-img-top" alt="Portfolio Item">
-                    <div class="card-body">
-                        <h5 class="card-title">Visual Creativity</h5>
-                        <p class="portfolio-stats">2,000 views | 150 likes</p>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="OIP.jpg" class="card-img-top gallery-img" alt="Design Thumbnail" width="250" height="250">
+                    <div class="card-body text-center">
+                        <p class="card-title">Discovery</p>
+                        <small class="text-muted">Research</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="ARTI.jpg" class="card-img-top gallery-img" alt="Design Thumbnail" width="250" height="250">
+                    <div class="card-body text-center">
+                        <p class="card-title"> Design Studio</p>
+                        <small class="text-muted">ArchiVision</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card shadow gallery-item">
+                    <img src="CYBS.jpg" class="card-img-top gallery-img" alt="Design Thumbnail" width="250" height="250">
+                    <div class="card-body text-center">
+                        <p class="card-title">LogicWorks</p>
+                        <small class="text-muted">CyberSphere</small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="custom-footer text-center py-3">
-        <p>&copy; 2024 Dribbble Clone. Designed by Kishore.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>All rights reserved by Kishore.V</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/32b96879-d1d8-4417-8262-cca87a0ce1bc)
+![image](https://github.com/user-attachments/assets/06b36831-33e8-4770-a493-8b988eb911cc)
 
-![image](https://github.com/user-attachments/assets/eafc99ee-a32b-4642-881f-e0d1c196cea2)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
